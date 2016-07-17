@@ -1,0 +1,2107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_projx.xsd">
+
+  <SchemaVersion>2.1</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <Targets>
+    <Target>
+      <TargetName>nrf51422_xxac_s110</TargetName>
+      <ToolsetNumber>0x4</ToolsetNumber>
+      <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060061::V5.06 update 1 (build 61)::ARMCC</pCCUsed>
+      <TargetOption>
+        <TargetCommonOption>
+          <Device>nRF51422_xxAC</Device>
+          <Vendor>Nordic Semiconductor</Vendor>
+          <PackID>NordicSemiconductor.nRF_DeviceFamilyPack.1.1.4</PackID>
+          <PackURL>http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_DeviceFamilyPack/</PackURL>
+          <Cpu>IROM(0x00000000,0x40000) IRAM(0x20000000,0x8000) CPUTYPE("Cortex-M0") CLOCK(16000000) ELITTLE</Cpu>
+          <FlashUtilSpec></FlashUtilSpec>
+          <StartupFile></StartupFile>
+          <FlashDriverDll>UL2CM3(-UM0049BUE -O4175 -S0 -C0 -N00("ARM CoreSight SW-DP") -D00(0BB11477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC800 -FN1 -FF0nRF5Prog -FS00 -FL08000)</FlashDriverDll>
+          <DeviceId>0</DeviceId>
+          <RegisterFile>core.h</RegisterFile>
+          <MemoryEnv></MemoryEnv>
+          <Cmp></Cmp>
+          <Asm></Asm>
+          <Linker></Linker>
+          <OHString></OHString>
+          <InfinionOptionDll></InfinionOptionDll>
+          <SLE66CMisc></SLE66CMisc>
+          <SLE66AMisc></SLE66AMisc>
+          <SLE66LinkerMisc></SLE66LinkerMisc>
+          <SFDFile>..\..\..\..\..\framework\helper_scripts\genproject\toolchains\arm\nrf51.xml</SFDFile>
+          <bCustSvd>0</bCustSvd>
+          <UseEnv>0</UseEnv>
+          <BinPath></BinPath>
+          <IncludePath></IncludePath>
+          <LibPath></LibPath>
+          <RegisterFilePath></RegisterFilePath>
+          <DBRegisterFilePath></DBRegisterFilePath>
+          <TargetStatus>
+            <Error>0</Error>
+            <ExitCodeStop>0</ExitCodeStop>
+            <ButtonStop>0</ButtonStop>
+            <NotGenerated>0</NotGenerated>
+            <InvalidFlash>1</InvalidFlash>
+          </TargetStatus>
+          <OutputDirectory>.\_build\</OutputDirectory>
+          <OutputName>nrf51422_xxac_s110</OutputName>
+          <CreateExecutable>1</CreateExecutable>
+          <CreateLib>0</CreateLib>
+          <CreateHexFile>1</CreateHexFile>
+          <DebugInformation>1</DebugInformation>
+          <BrowseInformation>1</BrowseInformation>
+          <ListingPath>.\_build\</ListingPath>
+          <HexFormatSelection>1</HexFormatSelection>
+          <Merge32K>0</Merge32K>
+          <CreateBatchFile>0</CreateBatchFile>
+          <BeforeCompile>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+            <nStopU1X>0</nStopU1X>
+            <nStopU2X>0</nStopU2X>
+          </BeforeCompile>
+          <BeforeMake>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+            <nStopB1X>0</nStopB1X>
+            <nStopB2X>0</nStopB2X>
+          </BeforeMake>
+          <AfterMake>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+            <nStopA1X>0</nStopA1X>
+            <nStopA2X>0</nStopA2X>
+          </AfterMake>
+          <SelectedForBatchBuild>0</SelectedForBatchBuild>
+          <SVCSIdString></SVCSIdString>
+        </TargetCommonOption>
+        <CommonProperty>
+          <UseCPPCompiler>0</UseCPPCompiler>
+          <RVCTCodeConst>0</RVCTCodeConst>
+          <RVCTZI>0</RVCTZI>
+          <RVCTOtherData>0</RVCTOtherData>
+          <ModuleSelection>0</ModuleSelection>
+          <IncludeInBuild>1</IncludeInBuild>
+          <AlwaysBuild>0</AlwaysBuild>
+          <GenerateAssemblyFile>0</GenerateAssemblyFile>
+          <AssembleAssemblyFile>0</AssembleAssemblyFile>
+          <PublicsOnly>0</PublicsOnly>
+          <StopOnExitCode>3</StopOnExitCode>
+          <CustomArgument></CustomArgument>
+          <IncludeLibraryModules></IncludeLibraryModules>
+          <ComprImg>1</ComprImg>
+        </CommonProperty>
+        <DllOption>
+          <SimDllName></SimDllName>
+          <SimDllArguments></SimDllArguments>
+          <SimDlgDll></SimDlgDll>
+          <SimDlgDllArguments></SimDlgDllArguments>
+          <TargetDllName>SARMCM3.DLL</TargetDllName>
+          <TargetDllArguments></TargetDllArguments>
+          <TargetDlgDll>TARMCM1.DLL</TargetDlgDll>
+          <TargetDlgDllArguments>-pCM0</TargetDlgDllArguments>
+        </DllOption>
+        <DebugOption>
+          <OPTHX>
+            <HexSelection>1</HexSelection>
+            <HexRangeLowAddress>0</HexRangeLowAddress>
+            <HexRangeHighAddress>0</HexRangeHighAddress>
+            <HexOffset>0</HexOffset>
+            <Oh166RecLen>16</Oh166RecLen>
+          </OPTHX>
+        </DebugOption>
+        <Utilities>
+          <Flash1>
+            <UseTargetDll>1</UseTargetDll>
+            <UseExternalTool>0</UseExternalTool>
+            <RunIndependent>0</RunIndependent>
+            <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
+            <Capability>1</Capability>
+            <DriverSelection>4099</DriverSelection>
+          </Flash1>
+          <bUseTDR>1</bUseTDR>
+          <Flash2>Segger\JL2CM3.dll</Flash2>
+          <Flash3>"" ()</Flash3>
+          <Flash4></Flash4>
+          <pFcarmOut></pFcarmOut>
+          <pFcarmGrp></pFcarmGrp>
+          <pFcArmRoot></pFcArmRoot>
+          <FcArmLst>0</FcArmLst>
+        </Utilities>
+        <TargetArmAds>
+          <ArmAdsMisc>
+            <GenerateListings>0</GenerateListings>
+            <asHll>1</asHll>
+            <asAsm>1</asAsm>
+            <asMacX>1</asMacX>
+            <asSyms>1</asSyms>
+            <asFals>1</asFals>
+            <asDbgD>1</asDbgD>
+            <asForm>1</asForm>
+            <ldLst>0</ldLst>
+            <ldmm>1</ldmm>
+            <ldXref>1</ldXref>
+            <BigEnd>0</BigEnd>
+            <AdsALst>1</AdsALst>
+            <AdsACrf>1</AdsACrf>
+            <AdsANop>0</AdsANop>
+            <AdsANot>0</AdsANot>
+            <AdsLLst>1</AdsLLst>
+            <AdsLmap>1</AdsLmap>
+            <AdsLcgr>1</AdsLcgr>
+            <AdsLsym>1</AdsLsym>
+            <AdsLszi>1</AdsLszi>
+            <AdsLtoi>1</AdsLtoi>
+            <AdsLsun>1</AdsLsun>
+            <AdsLven>1</AdsLven>
+            <AdsLsxf>1</AdsLsxf>
+            <RvctClst>0</RvctClst>
+            <GenPPlst>0</GenPPlst>
+            <AdsCpuType>"Cortex-M0"</AdsCpuType>
+            <RvctDeviceName></RvctDeviceName>
+            <mOS>0</mOS>
+            <uocRom>0</uocRom>
+            <uocRam>0</uocRam>
+            <hadIROM>1</hadIROM>
+            <hadIRAM>1</hadIRAM>
+            <hadXRAM>0</hadXRAM>
+            <uocXRam>0</uocXRam>
+            <RvdsVP>0</RvdsVP>
+            <hadIRAM2>0</hadIRAM2>
+            <hadIROM2>0</hadIROM2>
+            <StupSel>8</StupSel>
+            <useUlib>1</useUlib>
+            <EndSel>0</EndSel>
+            <uLtcg>0</uLtcg>
+            <nSecure>0</nSecure>
+            <RoSelD>3</RoSelD>
+            <RwSelD>5</RwSelD>
+            <CodeSel>0</CodeSel>
+            <OptFeed>0</OptFeed>
+            <NoZi1>0</NoZi1>
+            <NoZi2>0</NoZi2>
+            <NoZi3>0</NoZi3>
+            <NoZi4>0</NoZi4>
+            <NoZi5>0</NoZi5>
+            <Ro1Chk>0</Ro1Chk>
+            <Ro2Chk>0</Ro2Chk>
+            <Ro3Chk>0</Ro3Chk>
+            <Ir1Chk>1</Ir1Chk>
+            <Ir2Chk>0</Ir2Chk>
+            <Ra1Chk>0</Ra1Chk>
+            <Ra2Chk>0</Ra2Chk>
+            <Ra3Chk>0</Ra3Chk>
+            <Im1Chk>1</Im1Chk>
+            <Im2Chk>0</Im2Chk>
+            <OnChipMemories>
+              <Ocm1>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm1>
+              <Ocm2>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm2>
+              <Ocm3>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm3>
+              <Ocm4>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm4>
+              <Ocm5>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm5>
+              <Ocm6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm6>
+              <IRAM>
+                <Type>0</Type>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x8000</Size>
+              </IRAM>
+              <IROM>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x40000</Size>
+              </IROM>
+              <XRAM>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </XRAM>
+              <OCR_RVCT1>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT1>
+              <OCR_RVCT2>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT2>
+              <OCR_RVCT3>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT3>
+              <OCR_RVCT4>
+                <Type>1</Type>
+                <StartAddress>0x16000</StartAddress>
+                <Size>0x29000</Size>
+              </OCR_RVCT4>
+              <OCR_RVCT5>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT5>
+              <OCR_RVCT6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT6>
+              <OCR_RVCT7>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT7>
+              <OCR_RVCT8>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT8>
+              <OCR_RVCT9>
+                <Type>0</Type>
+                <StartAddress>0x20002000</StartAddress>
+                <Size>0x6000</Size>
+              </OCR_RVCT9>
+              <OCR_RVCT10>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT10>
+            </OnChipMemories>
+            <RvctStartVector></RvctStartVector>
+          </ArmAdsMisc>
+          <Cads>
+            <interw>1</interw>
+            <Optim>1</Optim>
+            <oTime>0</oTime>
+            <SplitLS>0</SplitLS>
+            <OneElfS>1</OneElfS>
+            <Strict>0</Strict>
+            <EnumInt>0</EnumInt>
+            <PlainCh>0</PlainCh>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <wLevel>0</wLevel>
+            <uThumb>0</uThumb>
+            <uSurpInc>0</uSurpInc>
+            <uC99>0</uC99>
+            <useXO>0</useXO>
+            <v6Lang>0</v6Lang>
+            <v6LangP>0</v6LangP>
+            <vShortEn>0</vShortEn>
+            <vShortWch>0</vShortWch>
+            <v6Lto>0</v6Lto>
+            <v6WtE>0</v6WtE>
+            <VariousControls>
+              <MiscControls>--cpp</MiscControls>
+              <Define>NRF51 BLE_STACK_SUPPORT_REQD S110 SOFTDEVICE_PRESENT BOARD_NRF6310 BSP_DEFINES_ONLY __CORTEX_M0 TARGET_MCU_NRF51_16K TARGET_MCU_NRF51822  TARGET_NRF51822_MKIT TARGET_CORTEX_M  TARGET_NRF5182  ARM_MATH_CM0  TOOLCHAIN_ARM_STD  __MBED__=1  TARGET_NORDIC  TARGET_MCU_NRF51  TARGET_MCU_NORDIC_16K  TARGET_M0  TOOLCHAIN_ARM  MBED_BUILD_TIMESTAMP=1448486316.17  TARGET_MCU_NRF51_16K_S110  __ASSERT_MSG</Define>
+              <Undefine></Undefine>
+              <IncludePath>..\..\..\mbed\api;..\..\..\mbed\common;..\..\..\mbed\hal;..\..\..\mbed\targets;..\..\..\mbed\targets\cmsis\TARGET_NORDIC\TARGET_MCU_NRF51822;..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822;..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\TARGET_NRF51822_MKIT;..\..\..\SEGGER_RTT;..\..\..\BLE_API;..\..\..\BLE_API\source\nRF51822;..\..\..\BLE_API\source\nRF51822\btle;..\..\..\BLE_API\source\nRF51822\btle\custom;..\..\..\BLE_API\source\nRF51822\common;..\..\..\BLE_API\source\services;..\..\..\BLE_API\ble\services</IncludePath>
+            </VariousControls>
+          </Cads>
+          <Aads>
+            <interw>1</interw>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <thumb>0</thumb>
+            <SplitLS>0</SplitLS>
+            <SwStkChk>0</SwStkChk>
+            <NoWarn>0</NoWarn>
+            <uSurpInc>0</uSurpInc>
+            <useXO>0</useXO>
+            <VariousControls>
+              <MiscControls></MiscControls>
+              <Define></Define>
+              <Undefine></Undefine>
+              <IncludePath></IncludePath>
+            </VariousControls>
+          </Aads>
+          <LDads>
+            <umfTarg>1</umfTarg>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <noStLib>0</noStLib>
+            <RepFail>1</RepFail>
+            <useFile>0</useFile>
+            <TextAddressRange>0x00000000</TextAddressRange>
+            <DataAddressRange>0x00000000</DataAddressRange>
+            <pXoBase></pXoBase>
+            <ScatterFile></ScatterFile>
+            <IncludeLibs></IncludeLibs>
+            <IncludeLibsPath></IncludeLibsPath>
+            <Misc></Misc>
+            <LinkerInputFile></LinkerInputFile>
+            <DisabledWarnings></DisabledWarnings>
+          </LDads>
+        </TargetArmAds>
+      </TargetOption>
+      <Groups>
+        <Group>
+          <GroupName>mbed_api</GroupName>
+          <Files>
+            <File>
+              <FileName>AnalogIn.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\AnalogIn.h</FilePath>
+            </File>
+            <File>
+              <FileName>AnalogOut.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\AnalogOut.h</FilePath>
+            </File>
+            <File>
+              <FileName>BusIn.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\BusIn.h</FilePath>
+            </File>
+            <File>
+              <FileName>BusInOut.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\BusInOut.h</FilePath>
+            </File>
+            <File>
+              <FileName>BusOut.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\BusOut.h</FilePath>
+            </File>
+            <File>
+              <FileName>CallChain.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\CallChain.h</FilePath>
+            </File>
+            <File>
+              <FileName>CAN.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\CAN.h</FilePath>
+            </File>
+            <File>
+              <FileName>can_helper.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\can_helper.h</FilePath>
+            </File>
+            <File>
+              <FileName>CircularBuffer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\CircularBuffer.h</FilePath>
+            </File>
+            <File>
+              <FileName>CThunk.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\CThunk.h</FilePath>
+            </File>
+            <File>
+              <FileName>DigitalIn.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\DigitalIn.h</FilePath>
+            </File>
+            <File>
+              <FileName>DigitalInOut.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\DigitalInOut.h</FilePath>
+            </File>
+            <File>
+              <FileName>DigitalOut.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\DigitalOut.h</FilePath>
+            </File>
+            <File>
+              <FileName>DirHandle.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\DirHandle.h</FilePath>
+            </File>
+            <File>
+              <FileName>Ethernet.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\Ethernet.h</FilePath>
+            </File>
+            <File>
+              <FileName>FileBase.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\FileBase.h</FilePath>
+            </File>
+            <File>
+              <FileName>FileHandle.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\FileHandle.h</FilePath>
+            </File>
+            <File>
+              <FileName>FileLike.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\FileLike.h</FilePath>
+            </File>
+            <File>
+              <FileName>FilePath.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\FilePath.h</FilePath>
+            </File>
+            <File>
+              <FileName>FileSystemLike.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\FileSystemLike.h</FilePath>
+            </File>
+            <File>
+              <FileName>FunctionPointer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\FunctionPointer.h</FilePath>
+            </File>
+            <File>
+              <FileName>I2C.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\I2C.h</FilePath>
+            </File>
+            <File>
+              <FileName>I2CSlave.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\I2CSlave.h</FilePath>
+            </File>
+            <File>
+              <FileName>InterruptIn.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\InterruptIn.h</FilePath>
+            </File>
+            <File>
+              <FileName>InterruptManager.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\InterruptManager.h</FilePath>
+            </File>
+            <File>
+              <FileName>LocalFileSystem.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\LocalFileSystem.h</FilePath>
+            </File>
+            <File>
+              <FileName>LowPowerTicker.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\LowPowerTicker.h</FilePath>
+            </File>
+            <File>
+              <FileName>LowPowerTimeout.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\LowPowerTimeout.h</FilePath>
+            </File>
+            <File>
+              <FileName>LowPowerTimer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\LowPowerTimer.h</FilePath>
+            </File>
+            <File>
+              <FileName>mbed.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\mbed.h</FilePath>
+            </File>
+            <File>
+              <FileName>mbed_assert.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\mbed_assert.h</FilePath>
+            </File>
+            <File>
+              <FileName>mbed_debug.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\mbed_debug.h</FilePath>
+            </File>
+            <File>
+              <FileName>mbed_error.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\mbed_error.h</FilePath>
+            </File>
+            <File>
+              <FileName>mbed_interface.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\mbed_interface.h</FilePath>
+            </File>
+            <File>
+              <FileName>platform.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\platform.h</FilePath>
+            </File>
+            <File>
+              <FileName>PortIn.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\PortIn.h</FilePath>
+            </File>
+            <File>
+              <FileName>PortInOut.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\PortInOut.h</FilePath>
+            </File>
+            <File>
+              <FileName>PortOut.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\PortOut.h</FilePath>
+            </File>
+            <File>
+              <FileName>PwmOut.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\PwmOut.h</FilePath>
+            </File>
+            <File>
+              <FileName>RawSerial.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\RawSerial.h</FilePath>
+            </File>
+            <File>
+              <FileName>rtc_time.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\rtc_time.h</FilePath>
+            </File>
+            <File>
+              <FileName>semihost_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\semihost_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>Serial.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\Serial.h</FilePath>
+            </File>
+            <File>
+              <FileName>SerialBase.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\SerialBase.h</FilePath>
+            </File>
+            <File>
+              <FileName>SPI.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\SPI.h</FilePath>
+            </File>
+            <File>
+              <FileName>SPISlave.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\SPISlave.h</FilePath>
+            </File>
+            <File>
+              <FileName>Stream.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\Stream.h</FilePath>
+            </File>
+            <File>
+              <FileName>Ticker.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\Ticker.h</FilePath>
+            </File>
+            <File>
+              <FileName>Timeout.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\Timeout.h</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\Timer.h</FilePath>
+            </File>
+            <File>
+              <FileName>TimerEvent.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\TimerEvent.h</FilePath>
+            </File>
+            <File>
+              <FileName>toolchain.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\toolchain.h</FilePath>
+            </File>
+            <File>
+              <FileName>Transaction.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\Transaction.h</FilePath>
+            </File>
+            <File>
+              <FileName>wait_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\api\wait_api.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>mbed_common</GroupName>
+          <Files>
+            <File>
+              <FileName>assert.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\common\assert.c</FilePath>
+            </File>
+            <File>
+              <FileName>board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\common\board.c</FilePath>
+            </File>
+            <File>
+              <FileName>BusIn.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\BusIn.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>BusInOut.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\BusInOut.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>BusOut.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\BusOut.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>CallChain.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\CallChain.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>CAN.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\CAN.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>error.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\common\error.c</FilePath>
+            </File>
+            <File>
+              <FileName>Ethernet.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\Ethernet.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>FileBase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\FileBase.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>FileLike.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\FileLike.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>FilePath.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\FilePath.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>FileSystemLike.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\FileSystemLike.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\common\gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>I2C.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\I2C.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>I2CSlave.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\I2CSlave.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>InterruptIn.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\InterruptIn.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>LocalFileSystem.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\LocalFileSystem.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>lp_ticker_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\common\lp_ticker_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>mbed_interface.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\common\mbed_interface.c</FilePath>
+            </File>
+            <File>
+              <FileName>pinmap_common.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\common\pinmap_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>RawSerial.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\RawSerial.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>retarget.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\retarget.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>rtc_time.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\common\rtc_time.c</FilePath>
+            </File>
+            <File>
+              <FileName>semihost_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\common\semihost_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>Serial.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\Serial.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>SerialBase.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\SerialBase.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>SPI.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\SPI.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>SPISlave.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\SPISlave.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Stream.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\Stream.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Ticker.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\Ticker.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>ticker_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\common\ticker_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>Timeout.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\Timeout.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\Timer.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>TimerEvent.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\mbed\common\TimerEvent.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>us_ticker_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\common\us_ticker_api.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>2</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>2</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <useXO>2</useXO>
+                    <v6Lang>0</v6Lang>
+                    <v6LangP>0</v6LangP>
+                    <vShortEn>0</vShortEn>
+                    <vShortWch>0</vShortWch>
+                    <v6Lto>0</v6Lto>
+                    <v6WtE>0</v6WtE>
+                    <VariousControls>
+                      <MiscControls>--c99</MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>wait_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\common\wait_api.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>mbed_hal</GroupName>
+          <Files>
+            <File>
+              <FileName>analogin_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\analogin_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>analogout_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\analogout_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>buffer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\buffer.h</FilePath>
+            </File>
+            <File>
+              <FileName>can_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\can_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>dma_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\dma_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>ethernet_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\ethernet_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>gpio_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\gpio_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>gpio_irq_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\gpio_irq_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>i2c_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\i2c_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>lp_ticker_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\lp_ticker_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>pinmap.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\pinmap.h</FilePath>
+            </File>
+            <File>
+              <FileName>port_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\port_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>pwmout_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\pwmout_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>rtc_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\rtc_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>serial_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\serial_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>sleep_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\sleep_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>spi_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\spi_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>ticker_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\ticker_api.h</FilePath>
+            </File>
+            <File>
+              <FileName>us_ticker_api.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\hal\us_ticker_api.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>mbed_target_hal</GroupName>
+          <GroupOption>
+            <CommonProperty>
+              <UseCPPCompiler>0</UseCPPCompiler>
+              <RVCTCodeConst>0</RVCTCodeConst>
+              <RVCTZI>0</RVCTZI>
+              <RVCTOtherData>0</RVCTOtherData>
+              <ModuleSelection>0</ModuleSelection>
+              <IncludeInBuild>2</IncludeInBuild>
+              <AlwaysBuild>2</AlwaysBuild>
+              <GenerateAssemblyFile>2</GenerateAssemblyFile>
+              <AssembleAssemblyFile>2</AssembleAssemblyFile>
+              <PublicsOnly>2</PublicsOnly>
+              <StopOnExitCode>11</StopOnExitCode>
+              <CustomArgument></CustomArgument>
+              <IncludeLibraryModules></IncludeLibraryModules>
+              <ComprImg>1</ComprImg>
+            </CommonProperty>
+            <GroupArmAds>
+              <Cads>
+                <interw>2</interw>
+                <Optim>0</Optim>
+                <oTime>2</oTime>
+                <SplitLS>2</SplitLS>
+                <OneElfS>2</OneElfS>
+                <Strict>2</Strict>
+                <EnumInt>2</EnumInt>
+                <PlainCh>2</PlainCh>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <wLevel>2</wLevel>
+                <uThumb>2</uThumb>
+                <uSurpInc>2</uSurpInc>
+                <uC99>2</uC99>
+                <useXO>2</useXO>
+                <v6Lang>0</v6Lang>
+                <v6LangP>0</v6LangP>
+                <vShortEn>0</vShortEn>
+                <vShortWch>0</vShortWch>
+                <v6Lto>0</v6Lto>
+                <v6WtE>0</v6WtE>
+                <VariousControls>
+                  <MiscControls>--c99</MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
+                </VariousControls>
+              </Cads>
+              <Aads>
+                <interw>2</interw>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <thumb>2</thumb>
+                <SplitLS>2</SplitLS>
+                <SwStkChk>2</SwStkChk>
+                <NoWarn>2</NoWarn>
+                <uSurpInc>2</uSurpInc>
+                <useXO>2</useXO>
+                <VariousControls>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
+                </VariousControls>
+              </Aads>
+            </GroupArmAds>
+          </GroupOption>
+          <Files>
+            <File>
+              <FileName>analogin_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\analogin_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>gpio_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\gpio_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>gpio_irq_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\gpio_irq_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>gpio_object.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\gpio_object.h</FilePath>
+            </File>
+            <File>
+              <FileName>i2c_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\i2c_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>objects.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\objects.h</FilePath>
+            </File>
+            <File>
+              <FileName>PeripheralNames.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\PeripheralNames.h</FilePath>
+            </File>
+            <File>
+              <FileName>pinmap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\pinmap.c</FilePath>
+            </File>
+            <File>
+              <FileName>port_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\port_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>PortNames.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\PortNames.h</FilePath>
+            </File>
+            <File>
+              <FileName>pwmout_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\pwmout_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>serial_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\serial_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>sleep.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\sleep.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\spi_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>twi_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\twi_config.h</FilePath>
+            </File>
+            <File>
+              <FileName>twi_master.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\twi_master.c</FilePath>
+            </File>
+            <File>
+              <FileName>twi_master.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\twi_master.h</FilePath>
+            </File>
+            <File>
+              <FileName>us_ticker.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\us_ticker.c</FilePath>
+            </File>
+            <File>
+              <FileName>device.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\TARGET_NRF51822_MKIT\device.h</FilePath>
+            </File>
+            <File>
+              <FileName>PinNames.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\mbed\targets\hal\TARGET_NORDIC\TARGET_MCU_NRF51822\TARGET_NRF51822_MKIT\PinNames.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>mbed_ble_services</GroupName>
+          <Files>
+            <File>
+              <FileName>BatteryService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\services\BatteryService.h</FilePath>
+            </File>
+            <File>
+              <FileName>DeviceInformationService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\services\DeviceInformationService.h</FilePath>
+            </File>
+            <File>
+              <FileName>DFUService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\services\DFUService.h</FilePath>
+            </File>
+            <File>
+              <FileName>EddystoneConfigService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\services\EddystoneConfigService.h</FilePath>
+            </File>
+            <File>
+              <FileName>EddystoneService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\services\EddystoneService.h</FilePath>
+            </File>
+            <File>
+              <FileName>EnvironmentalService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\services\EnvironmentalService.h</FilePath>
+            </File>
+            <File>
+              <FileName>HealthThermometerService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\services\HealthThermometerService.h</FilePath>
+            </File>
+            <File>
+              <FileName>HeartRateService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\services\HeartRateService.h</FilePath>
+            </File>
+            <File>
+              <FileName>iBeacon.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\services\iBeacon.h</FilePath>
+            </File>
+            <File>
+              <FileName>LinkLossService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\services\LinkLossService.h</FilePath>
+            </File>
+            <File>
+              <FileName>UARTService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\services\UARTService.h</FilePath>
+            </File>
+            <File>
+              <FileName>URIBeaconConfigService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\services\URIBeaconConfigService.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>RTT</GroupName>
+          <Files>
+            <File>
+              <FileName>SEGGER_RTT.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\SEGGER_RTT\SEGGER_RTT.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\SEGGER_RTT\SEGGER_RTT.h</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_Conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\SEGGER_RTT\SEGGER_RTT_Conf.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>mbed_ble</GroupName>
+          <Files>
+            <File>
+              <FileName>BLE.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\BLE.h</FilePath>
+            </File>
+            <File>
+              <FileName>blecommon.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\blecommon.h</FilePath>
+            </File>
+            <File>
+              <FileName>BLEInstanceBase.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\BLEInstanceBase.h</FilePath>
+            </File>
+            <File>
+              <FileName>CallChainOfFunctionPointersWithContext.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\CallChainOfFunctionPointersWithContext.h</FilePath>
+            </File>
+            <File>
+              <FileName>DiscoveredCharacteristic.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\DiscoveredCharacteristic.h</FilePath>
+            </File>
+            <File>
+              <FileName>DiscoveredService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\DiscoveredService.h</FilePath>
+            </File>
+            <File>
+              <FileName>FunctionPointerWithContext.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\FunctionPointerWithContext.h</FilePath>
+            </File>
+            <File>
+              <FileName>Gap.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\Gap.h</FilePath>
+            </File>
+            <File>
+              <FileName>GapAdvertisingData.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\GapAdvertisingData.h</FilePath>
+            </File>
+            <File>
+              <FileName>GapAdvertisingParams.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\GapAdvertisingParams.h</FilePath>
+            </File>
+            <File>
+              <FileName>GapEvents.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\GapEvents.h</FilePath>
+            </File>
+            <File>
+              <FileName>GapScanningParams.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\GapScanningParams.h</FilePath>
+            </File>
+            <File>
+              <FileName>GattAttribute.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\GattAttribute.h</FilePath>
+            </File>
+            <File>
+              <FileName>GattCallbackParamTypes.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\GattCallbackParamTypes.h</FilePath>
+            </File>
+            <File>
+              <FileName>GattCharacteristic.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\GattCharacteristic.h</FilePath>
+            </File>
+            <File>
+              <FileName>GattClient.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\GattClient.h</FilePath>
+            </File>
+            <File>
+              <FileName>GattServer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\GattServer.h</FilePath>
+            </File>
+            <File>
+              <FileName>GattServerEvents.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\GattServerEvents.h</FilePath>
+            </File>
+            <File>
+              <FileName>GattService.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\GattService.h</FilePath>
+            </File>
+            <File>
+              <FileName>SafeBool.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\SafeBool.h</FilePath>
+            </File>
+            <File>
+              <FileName>SecurityManager.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\SecurityManager.h</FilePath>
+            </File>
+            <File>
+              <FileName>ServiceDiscovery.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\ServiceDiscovery.h</FilePath>
+            </File>
+            <File>
+              <FileName>UUID.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\ble\UUID.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>mbed_ble_api_service</GroupName>
+          <Files>
+            <File>
+              <FileName>DFUService.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\services\DFUService.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>UARTService.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\services\UARTService.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>URIBeaconConfigService.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\services\URIBeaconConfigService.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>mbed_ble_api</GroupName>
+          <Files>
+            <File>
+              <FileName>BLE.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\BLE.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>DiscoveredCharacteristic.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\DiscoveredCharacteristic.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>GapScanningParams.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\GapScanningParams.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>src</GroupName>
+          <Files>
+            <File>
+              <FileName>main.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\src\main.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>mbed_ble_nrf51822</GroupName>
+          <Files>
+            <File>
+              <FileName>nRF5xDiscoveredCharacteristic.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xDiscoveredCharacteristic.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>nRF5xDiscoveredCharacteristic.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xDiscoveredCharacteristic.h</FilePath>
+            </File>
+            <File>
+              <FileName>nRF5xGap.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xGap.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>nRF5xGap.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xGap.h</FilePath>
+            </File>
+            <File>
+              <FileName>nRF5xGattClient.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xGattClient.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>nRF5xGattClient.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xGattClient.h</FilePath>
+            </File>
+            <File>
+              <FileName>nRF5xGattServer.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xGattServer.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>nRF5xGattServer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xGattServer.h</FilePath>
+            </File>
+            <File>
+              <FileName>nRF5xn.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xn.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>nRF5xn.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xn.h</FilePath>
+            </File>
+            <File>
+              <FileName>nRF5xSecurityManager.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xSecurityManager.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>nRF5xSecurityManager.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xSecurityManager.h</FilePath>
+            </File>
+            <File>
+              <FileName>nRF5xServiceDiscovery.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xServiceDiscovery.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>nRF5xServiceDiscovery.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\nRF5xServiceDiscovery.h</FilePath>
+            </File>
+            <File>
+              <FileName>projectconfig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\projectconfig.h</FilePath>
+            </File>
+            <File>
+              <FileName>btle.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\btle\btle.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>btle.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\btle\btle.h</FilePath>
+            </File>
+            <File>
+              <FileName>btle_advertising.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\btle\btle_advertising.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>btle_advertising.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\btle\btle_advertising.h</FilePath>
+            </File>
+            <File>
+              <FileName>btle_discovery.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\btle\btle_discovery.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>btle_discovery.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\btle\btle_discovery.h</FilePath>
+            </File>
+            <File>
+              <FileName>btle_gap.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\btle\btle_gap.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>btle_gap.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\btle\btle_gap.h</FilePath>
+            </File>
+            <File>
+              <FileName>btle_security.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\btle\btle_security.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>btle_security.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\btle\btle_security.h</FilePath>
+            </File>
+            <File>
+              <FileName>custom_helper.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\btle\custom\custom_helper.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>custom_helper.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\BLE_API\source\nRF51822\btle\custom\custom_helper.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>::CMSIS</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::Device</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::nRF_BLE</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::nRF_Drivers</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::nRF_Libraries</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::nRF_SoftDevice</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::Board Support</GroupName>
+        </Group>
+      </Groups>
+    </Target>
+  </Targets>
+
+  <RTE>
+    <packages>
+      <filter>
+        <targetInfos/>
+      </filter>
+      <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="4.5.0">
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed"/>
+        </targetInfos>
+      </package>
+      <package name="nRF_BLE" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE" vendor="NordicSemiconductor" version="1.1.1">
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed"/>
+        </targetInfos>
+      </package>
+      <package name="nRF_DeviceFamilyPack" schemaVersion="1.3" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_DeviceFamilyPack/" vendor="NordicSemiconductor" version="8.2.0">
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </package>
+      <package name="nRF_Drivers" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Drivers" vendor="NordicSemiconductor" version="1.2.1">
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed"/>
+        </targetInfos>
+      </package>
+      <package name="nRF_Examples" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Examples" vendor="NordicSemiconductor" version="7.2.0">
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed"/>
+        </targetInfos>
+      </package>
+      <package name="nRF_Libraries" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries" vendor="NordicSemiconductor" version="1.1.1">
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed"/>
+        </targetInfos>
+      </package>
+      <package name="nRF_SoftDevice_Common" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_SoftDevice_Common" vendor="NordicSemiconductor" version="1.1.1">
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed"/>
+        </targetInfos>
+      </package>
+      <package name="nRF_SoftDevice_S110" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_SoftDevice_S110" vendor="NordicSemiconductor" version="7.1.0-3">
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed"/>
+        </targetInfos>
+      </package>
+    </packages>
+    <apis/>
+    <components>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="4.3.0" condition="Cortex-M Device">
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="4.5.0"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Board Support" Cgroup="bsp" Cvariant="Defines" Cvendor="NordicSemiconductor" Cversion="7.2.0" condition="bsp_Defines">
+        <package name="nRF_Examples" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Examples/" vendor="NordicSemiconductor" version="7.2.0"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="Startup" Cvendor="NordicSemiconductor" Cversion="8.2.0" condition="nRF51 Series CMSIS Device">
+        <package name="nRF_DeviceFamilyPack" schemaVersion="1.3" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_DeviceFamilyPack/" vendor="NordicSemiconductor" version="8.2.0"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_BLE" Cgroup="BLE_Modules" Csub="ble_advdata" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="ble_advdata">
+        <package name="nRF_BLE" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_BLE" Cgroup="BLE_Modules" Csub="ble_radio_notification" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="ble_radio_notification">
+        <package name="nRF_BLE" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_BLE" Cgroup="BLE_Modules" Csub="ble_service_common" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="ble_service_common">
+        <package name="nRF_BLE" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE" vendor="NordicSemiconductor"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_BLE" Cgroup="BLE_Modules" Csub="device_manager" Cvariant="Peripheral" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="device_manager_Peripheral">
+        <package name="nRF_BLE" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE" vendor="NordicSemiconductor"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_BLE" Cgroup="BLE_Services" Csub="ble_bas" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="ble_bas">
+        <package name="nRF_BLE" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE" vendor="NordicSemiconductor"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_BLE" Cgroup="BLE_Services" Csub="ble_dis" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="ble_dis">
+        <package name="nRF_BLE" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE" vendor="NordicSemiconductor"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_Drivers" Cgroup="ble_flash" Cvendor="NordicSemiconductor" Cversion="1.2.1" condition="ble_flash">
+        <package name="nRF_Drivers" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Drivers/" vendor="NordicSemiconductor" version="1.2.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_Drivers" Cgroup="nrf_delay" Cvendor="NordicSemiconductor" Cversion="1.2.1" condition="nrf_delay">
+        <package name="nRF_Drivers" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Drivers" vendor="NordicSemiconductor"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_Drivers" Cgroup="nrf_error" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.2.1" condition="nrf_error">
+        <package name="nRF_Drivers" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Drivers" vendor="NordicSemiconductor"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_Drivers" Cgroup="nrf_gpio" Cvendor="NordicSemiconductor" Cversion="1.2.1" condition="nrf_gpio">
+        <package name="nRF_Drivers" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Drivers/" vendor="NordicSemiconductor" version="1.2.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_Drivers" Cgroup="nrf_soc" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.2.1" condition="nrf_soc">
+        <package name="nRF_Drivers" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Drivers/" vendor="NordicSemiconductor" version="1.2.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_Drivers" Cgroup="pstorage" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.2.1" condition="pstorage">
+        <package name="nRF_Drivers" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Drivers/" vendor="NordicSemiconductor" version="1.2.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_Libraries" Cgroup="app_error" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_error">
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_Libraries" Cgroup="app_scheduler" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_scheduler">
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_Libraries" Cgroup="app_trace" Cvariant="Dummy" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_trace_Dummy">
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_Libraries" Cgroup="app_util" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_util">
+        <package name="nRF_Libraries" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries" vendor="NordicSemiconductor"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_Libraries" Cgroup="nrf_assert" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="nrf_assert">
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_SoftDevice" Cgroup="Internal" Csub="sd_common" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="sd_common">
+        <package name="nRF_SoftDevice_Common" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_SoftDevice_Common/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_SoftDevice" Cgroup="Internal" Csub="softdevice_present" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="softdevice_present">
+        <package name="nRF_SoftDevice_Common" schemaVersion="1.2" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_SoftDevice_Common" vendor="NordicSemiconductor"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Cclass="nRF_SoftDevice" Cgroup="s110" Cvariant="Present_only" Cvendor="NordicSemiconductor" Cversion="7.1.0-3" condition="s110_Present_only">
+        <package name="nRF_SoftDevice_S110" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_SoftDevice_S110/" vendor="NordicSemiconductor" version="7.1.0-3"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110" versionMatchMode="fixed">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+    </components>
+    <files>
+      <file attr="config" category="source" name="bsp\bsp.c" version="7.2.0">
+        <instance index="0" removed="1">RTE\Board_Support\nRF51422_xxAC\bsp.c</instance>
+        <component Cclass="Board Support" Cgroup="bsp" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="7.2.0" condition="bsp"/>
+        <package name="nRF_Examples" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Examples/" vendor="NordicSemiconductor" version="7.2.0"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" condition="ARM Compiler" name="Device\Source\arm\arm_startup_nrf51.s" version="8.2.0">
+        <instance index="0">RTE\Device\nRF51422_xxAC\arm_startup_nrf51.s</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="NordicSemiconductor" Cversion="1.0.1" condition="nRF51 Series CMSIS Device"/>
+        <package license="License\license.txt" name="nRF_DeviceFamilyPack" schemaVersion="1.0" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_DeviceFamilyPack/" vendor="NordicSemiconductor" version="1.1.4"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="Device\Source\system_nrf51.c" version="8.2.0">
+        <instance index="0">RTE\Device\nRF51422_xxAC\system_nrf51.c</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="NordicSemiconductor" Cversion="1.0.1" condition="nRF51 Series CMSIS Device"/>
+        <package license="License\license.txt" name="nRF_DeviceFamilyPack" schemaVersion="1.0" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_DeviceFamilyPack/" vendor="NordicSemiconductor" version="1.1.4"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="common\ble_advdata.c" version="1.1.1">
+        <instance index="0">RTE\nRF_BLE\nRF51422_xxAC\ble_advdata.c</instance>
+        <component Cclass="nRF_BLE" Cgroup="BLE_Modules" Csub="ble_advdata" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="ble_advdata"/>
+        <package name="nRF_BLE" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="common\ble_advdata.h" version="1.1.1">
+        <instance index="0">RTE\nRF_BLE\nRF51422_xxAC\ble_advdata.h</instance>
+        <component Cclass="nRF_BLE" Cgroup="BLE_Modules" Csub="ble_advdata" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="ble_advdata"/>
+        <package name="nRF_BLE" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="common\ble_conn_params.c" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_BLE\nRF51422_xxAC\ble_conn_params.c</instance>
+        <component Cclass="nRF_BLE" Cgroup="BLE_Modules" Csub="ble_conn_params" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="ble_conn_params"/>
+        <package name="nRF_BLE" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="common\ble_conn_params.h" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_BLE\nRF51422_xxAC\ble_conn_params.h</instance>
+        <component Cclass="nRF_BLE" Cgroup="BLE_Modules" Csub="ble_conn_params" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="ble_conn_params"/>
+        <package name="nRF_BLE" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="ble_radio_notification\ble_radio_notification.c" version="1.1.1">
+        <instance index="0">RTE\nRF_BLE\nRF51422_xxAC\ble_radio_notification.c</instance>
+        <component Cclass="nRF_BLE" Cgroup="BLE_Modules" Csub="ble_radio_notification" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="ble_radio_notification"/>
+        <package name="nRF_BLE" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="ble_radio_notification\ble_radio_notification.h" version="1.1.1">
+        <instance index="0">RTE\nRF_BLE\nRF51422_xxAC\ble_radio_notification.h</instance>
+        <component Cclass="nRF_BLE" Cgroup="BLE_Modules" Csub="ble_radio_notification" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="ble_radio_notification"/>
+        <package name="nRF_BLE" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="device_manager\config\device_manager_cnfg.h" version="1.1.1">
+        <instance index="0">RTE\nRF_BLE\nRF51422_xxAC\device_manager_cnfg.h</instance>
+        <component Cclass="nRF_BLE" Cgroup="BLE_Modules" Csub="device_manager" Cvariant="Peripheral" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="device_manager_Peripheral"/>
+        <package name="nRF_BLE" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_BLE/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="uart\app_uart.h" version="1.2.1">
+        <instance index="0" removed="1">RTE\nRF_Drivers\nRF51422_xxAC\app_uart.h</instance>
+        <component Cclass="nRF_Drivers" Cgroup="app_uart" Cvariant="Fifo" Cvendor="NordicSemiconductor" Cversion="1.2.1" condition="app_uart_Fifo"/>
+        <package name="nRF_Drivers" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Drivers/" vendor="NordicSemiconductor" version="1.2.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="uart\app_uart_fifo.c" version="1.2.1">
+        <instance index="0" removed="1">RTE\nRF_Drivers\nRF51422_xxAC\app_uart_fifo.c</instance>
+        <component Cclass="nRF_Drivers" Cgroup="app_uart" Cvariant="Fifo" Cvendor="NordicSemiconductor" Cversion="1.2.1" condition="app_uart_Fifo"/>
+        <package name="nRF_Drivers" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Drivers/" vendor="NordicSemiconductor" version="1.2.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="ble_flash\ble_flash.c" version="1.2.1">
+        <instance index="0">RTE\nRF_Drivers\nRF51422_xxAC\ble_flash.c</instance>
+        <component Cclass="nRF_Drivers" Cgroup="ble_flash" Cvendor="NordicSemiconductor" Cversion="1.2.1" condition="ble_flash"/>
+        <package name="nRF_Drivers" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Drivers/" vendor="NordicSemiconductor" version="1.2.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="pstorage\pstorage.c" version="1.2.1">
+        <instance index="0">RTE\nRF_Drivers\nRF51422_xxAC\pstorage.c</instance>
+        <component Cclass="nRF_Drivers" Cgroup="pstorage" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.2.1" condition="pstorage"/>
+        <package name="nRF_Drivers" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Drivers/" vendor="NordicSemiconductor" version="1.2.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="pstorage\pstorage.h" version="1.2.1">
+        <instance index="0">RTE\nRF_Drivers\nRF51422_xxAC\pstorage.h</instance>
+        <component Cclass="nRF_Drivers" Cgroup="pstorage" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.2.1" condition="pstorage"/>
+        <package name="nRF_Drivers" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Drivers/" vendor="NordicSemiconductor" version="1.2.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="pstorage\config\pstorage_platform.h" version="1.2.1">
+        <instance index="0">RTE\nRF_Drivers\nRF51422_xxAC\pstorage_platform.h</instance>
+        <component Cclass="nRF_Drivers" Cgroup="pstorage" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.2.1" condition="pstorage"/>
+        <package name="nRF_Drivers" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Drivers/" vendor="NordicSemiconductor" version="1.2.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="button\app_button.c" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_Libraries\nRF51422_xxAC\app_button.c</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_button" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_button"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="button\app_button.h" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_Libraries\nRF51422_xxAC\app_button.h</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_button" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_button"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="util\app_error.c" version="1.1.1">
+        <instance index="0">RTE\nRF_Libraries\nRF51422_xxAC\app_error.c</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_error" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_error"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="util\app_error.h" version="1.1.1">
+        <instance index="0">RTE\nRF_Libraries\nRF51422_xxAC\app_error.h</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_error" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_error"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="fifo\app_fifo.c" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_Libraries\nRF51422_xxAC\app_fifo.c</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_fifo" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_fifo"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="fifo\app_fifo.h" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_Libraries\nRF51422_xxAC\app_fifo.h</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_fifo" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_fifo"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="gpiote\app_gpiote.c" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_Libraries\nRF51422_xxAC\app_gpiote.c</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_gpiote" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_gpiote"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="gpiote\app_gpiote.h" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_Libraries\nRF51422_xxAC\app_gpiote.h</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_gpiote" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_gpiote"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="scheduler\app_scheduler.c" version="1.1.1">
+        <instance index="0">RTE\nRF_Libraries\nRF51422_xxAC\app_scheduler.c</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_scheduler" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_scheduler"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="scheduler\app_scheduler.h" version="1.1.1">
+        <instance index="0">RTE\nRF_Libraries\nRF51422_xxAC\app_scheduler.h</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_scheduler" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_scheduler"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="timer\app_timer.c" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_Libraries\nRF51422_xxAC\app_timer.c</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_timer" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_timer"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="timer\app_timer.h" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_Libraries\nRF51422_xxAC\app_timer.h</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_timer" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_timer"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="trace\app_trace.c" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_Libraries\nRF51422_xxAC\app_trace.c</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_trace" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_trace"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="trace\app_trace.h" version="1.1.1">
+        <instance index="0">RTE\nRF_Libraries\nRF51422_xxAC\app_trace.h</instance>
+        <component Cclass="nRF_Libraries" Cgroup="app_trace" Cvariant="Dummy" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="app_trace_Dummy"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="sensorsim\ble_sensorsim.c" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_Libraries\nRF51422_xxAC\ble_sensorsim.c</instance>
+        <component Cclass="nRF_Libraries" Cgroup="ble_sensorsim" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="ble_sensorsim"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="sensorsim\ble_sensorsim.h" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_Libraries\nRF51422_xxAC\ble_sensorsim.h</instance>
+        <component Cclass="nRF_Libraries" Cgroup="ble_sensorsim" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="ble_sensorsim"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="util\nrf_assert.c" version="1.1.1">
+        <instance index="0">RTE\nRF_Libraries\nRF51422_xxAC\nrf_assert.c</instance>
+        <component Cclass="nRF_Libraries" Cgroup="nrf_assert" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="nrf_assert"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="util\nrf_assert.h" version="1.1.1">
+        <instance index="0">RTE\nRF_Libraries\nRF51422_xxAC\nrf_assert.h</instance>
+        <component Cclass="nRF_Libraries" Cgroup="nrf_assert" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="nrf_assert"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="source" name="uart\retarget.c" version="1.1.1">
+        <instance index="0" removed="1">RTE\nRF_Libraries\nRF51422_xxAC\retarget.c</instance>
+        <component Cclass="nRF_Libraries" Cgroup="retarget" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="retarget"/>
+        <package name="nRF_Libraries" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_Libraries/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="softdevice_handler\softdevice_handler.c" version="1.1.1">
+        <instance index="0">RTE\nRF_SoftDevice\nRF51422_xxAC\softdevice_handler.c</instance>
+        <component Cclass="nRF_SoftDevice" Cgroup="Internal" Csub="sd_common" Cvariant="default" Cvendor="NordicSemiconductor" Cversion="1.1.1" condition="sd_common"/>
+        <package name="nRF_SoftDevice_Common" schemaVersion="1.2" supportContact="http://www.nordicsemi.com/About-us/Contact-us" url="http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_SoftDevice_Common/" vendor="NordicSemiconductor" version="1.1.1"/>
+        <targetInfos>
+          <targetInfo name="nrf51422_xxac_s110"/>
+        </targetInfos>
+      </file>
+    </files>
+  </RTE>
+
+</Project>
