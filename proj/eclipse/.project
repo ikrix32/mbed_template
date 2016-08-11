@@ -26,9 +26,9 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>mbed_api</name>
+			<name>mbed-api</name>
 			<type>2</type>
-			<location>/Volumes/DataHDD/work/git/mbed_api</location>
+			<location>/Volumes/DataHDD/work/git/mbed-api</location>
 		</link>
 		<link>
 			<name>nrf51sdk_7_2_0</name>

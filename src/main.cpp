@@ -1,11 +1,16 @@
 #include "mbed.h"
 #include "SEGGER_RTT.h"
 #include "ble/services/UARTService.h"
+#include "ble/services/BatteryService.h"
+#include "ble/services/DeviceInformationService.h"
 
 DigitalOut led1(p9);
 
 BLEDevice ble;
-UARTService *uart;
+
+UARTService *uart=NULL;
+//BatteryService *batteryService = NULL;
+DeviceInformationService *deviceInfo=NULL;
 
 void ble_uart_print( const char * format, ... )
 {
@@ -52,7 +57,8 @@ void onDataSent(unsigned length){
 }
 
 void onDataWritten(const GattWriteCallbackParams *eventDataP) {
-	rtt_print("\nBLE data written");
+	rtt_print("\nBLE data written ");
+	ble_uart_print("\n Tick");
 }
 void onDataRead(const GattReadCallbackParams *eventDataP) {
 	rtt_print("\nBLE data read");
@@ -69,7 +75,7 @@ void onSecuritySetupComplete(Gap::Handle_t, SecurityManager::SecurityCompletionS
 
 void periodicCallback(void)
 {
-	rtt_print("\nTick");
+	//rtt_print("\nTick");
     if(bleConsoleIsConnected()){
     	led1 = !led1; // Do blinky on LED1 while we're waiting for BLE events
         ble_uart_print("\n Tick");
@@ -100,22 +106,24 @@ void bleInitComplete(BLE::InitializationCompleteCallbackContext *params)
     ble.onSecuritySetupInitiated(onSecuritySetupInitiated);
     ble.onSecuritySetupCompleted(onSecuritySetupComplete);
 
+    // Setup auxiliary service.
+    deviceInfo = new DeviceInformationService(ble, "ARM", "Model1", "SN1", "hw-rev1", "fw-rev1", "soft-rev1");
+
 	// Setup primary service.
     uart = new UARTService(ble);
 
-    // Setup auxiliary service.
-    //deviceInfo = new DeviceInformationService(ble, "ARM", "Model1", "SN1", "hw-rev1", "fw-rev1", "soft-rev1");
+    //batteryService = new BatteryService(ble, 90);
+
 
     // Setup advertising.
+    gap.accumulateAdvertisingPayload(GapAdvertisingData::GENERIC_COMPUTER);
+
     gap.accumulateAdvertisingPayload(GapAdvertisingData::BREDR_NOT_SUPPORTED | GapAdvertisingData::LE_GENERAL_DISCOVERABLE);
-    //gap.accumulateAdvertisingPayload(GapAdvertisingData::COMPLETE_LIST_16BIT_SERVICE_IDS, (uint8_t *)uuid16_list, sizeof(uuid16_list));
-    //gap.accumulateAdvertisingPayload(GapAdvertisingData::GENERIC_HEART_RATE_SENSOR);
     gap.accumulateAdvertisingPayload(GapAdvertisingData::SHORTENED_LOCAL_NAME, (uint8_t *)DEVICE_NAME, sizeof(DEVICE_NAME));
     gap.accumulateAdvertisingPayload(GapAdvertisingData::COMPLETE_LOCAL_NAME, (uint8_t *)DEVICE_NAME, sizeof(DEVICE_NAME));
-    gap.accumulateAdvertisingPayload(GapAdvertisingData::COMPLETE_LIST_128BIT_SERVICE_IDS,
-                                           (const uint8_t *)UARTServiceUUID_reversed, sizeof(UARTServiceUUID_reversed));
+
     gap.setAdvertisingType(GapAdvertisingParams::ADV_CONNECTABLE_UNDIRECTED);
-    gap.setAdvertisingInterval(1000); //1000ms
+    gap.setAdvertisingInterval(160); //1000ms
     gap.startAdvertising();
 
     rtt_print("\nBluetooth Advertising Started");
