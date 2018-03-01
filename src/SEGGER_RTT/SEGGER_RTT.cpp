@@ -592,7 +592,7 @@ int SEGGER_RTT_TerminalOut (char TerminalId, const char* s) {
 
 void rtt_print(const char * format, ... )
 {
-    char buffer[250];
+    static char buffer[64];
     
     va_list args;
     va_start (args, format);

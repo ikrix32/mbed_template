@@ -108,5 +108,4 @@ int     SEGGER_RTT_TerminalOut        (char TerminalId, const char* s);
 int SEGGER_RTT_printf(unsigned BufferIndex, const char * sFormat, ...);
 
 void rtt_print(const char * format, ... );
-
 /*************************** End of file ****************************/

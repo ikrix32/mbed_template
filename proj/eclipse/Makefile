@@ -21,9 +21,10 @@ OPTFLAGS= -g3 -O0
 # application source
 
 INC_PATHS += $(call allincludes,./../../src)
-#C_SOURCE_FILES += $(call allsourcefiles,./../../src,*.c)
+C_SOURCE_FILES += $(call allsourcefiles,./../../src,*.c)
 CPP_SOURCE_FILES += $(call allsourcefiles,./../../src,*.cpp)
 
+ASMFLAGS += -D__HEAP_SIZE=2048 -D__STACK_SIZE=2048
 
 CFLAGS := -DDEBUG_NRF_USER -Wno-unused-function
 
@@ -34,6 +35,7 @@ CFLAGS += -D__CORTEX_M0
 # -DTARGET_MCU_NRF51_16K -DTARGET_MCU_NRF51822 
 #CFLAGS += -DTARGET_NRF51822_MKIT -DTARGET_LIKE_MBED -DTARGET_CORTEX_M 
 CFLAGS += -DARM_MATH_CM0 
+CFLAGS += -DTARGET_NRF51822 #DFUService
 #-DMBED_BUILD_TIMESTAMP="1466981483" -DTARGET_NRF51822
 #CFLAGS += -fomit-frame-pointer 
 #-DTOOLCHAIN_GCC 
@@ -91,12 +93,11 @@ endif
 
 #RTOS
 ifeq ($(USE_MBED_RTOS),true)
-CFLAGS += -DTOOLCHAIN_GCC
+#INC_PATHS += -I"$(MBED_API_PATH)/rtos/rtos" -I"$(MBED_API_PATH)/rtos/rtx/TARGET_CORTEX_M"
+#C_SOURCE_FILES += $(call sourcefiles,$(MBED_API_PATH)/rtos/rtos/,*.c)
+#CPP_SOURCE_FILES += $(call sourcefiles,$(MBED_API_PATH)/rtos/rtos/,*.cpp)
 
-INC_PATHS += -I"$(MBED_API_PATH)/rtos/rtos" -I"$(MBED_API_PATH)/rtos/rtx/TARGET_CORTEX_M"
-C_SOURCE_FILES += $(call sourcefiles,$(MBED_API_PATH)/rtos/rtos/,*.c)
-CPP_SOURCE_FILES += $(call sourcefiles,$(MBED_API_PATH)/rtos/rtos/,*.cpp)
-C_SOURCE_FILES += $(call sourcefiles,$(MBED_API_PATH)/rtos/rtx/TARGET_CORTEX_M,*.c)
+#C_SOURCE_FILES += $(call sourcefiles,$(MBED_API_PATH)/rtos/rtx/TARGET_CORTEX_M,*.c)
 
 #ASM_SOURCE_FILES += $(MBED_API_PATH)/rtos/rtx/TARGET_CORTEX_M/TARGET_M0/TOOLCHAIN_GCC/HAL_CM0.s
 #ASM_SOURCE_FILES += $(MBED_API_PATH)/rtos/rtx/TARGET_CORTEX_M/TARGET_M0/TOOLCHAIN_GCC/SVC_Table.s
@@ -120,6 +121,11 @@ INC_PATHS += -I$(SDK_PATH)/components/softdevice/common/softdevice_handler
 INC_PATHS += -I$(SDK_PATH)/components/libraries/scheduler
 INC_PATHS += -I$(SDK_PATH)/components/drivers_nrf/ble_flash
 INC_PATHS += -I$(SDK_PATH)/components/ble/device_manager
+ifeq ($(USE_DFU_SERVICE),true)
+INC_PATHS += -I$(SDK_PATH)/components/libraries/bootloader_dfu
+INC_PATHS += -I$(SDK_PATH)/components/libraries/bootloader_dfu/experimental
+INC_PATHS += -I$(SDK_PATH)/components/ble/ble_services/ble_dfu
+endif
 #INC_PATHS += -I$(SDK_PATH)/components/libraries/timer#ble SDK_CONN_PARAMS_MODULE_ENABLE
 
 C_SOURCE_FILES += $(SDK_PATH)/components/drivers_nrf/pstorage/pstorage.c
@@ -128,6 +134,11 @@ C_SOURCE_FILES += $(SDK_PATH)/components/libraries/util/app_error.c
 C_SOURCE_FILES += $(SDK_PATH)/components/softdevice/common/softdevice_handler/softdevice_handler.c
 C_SOURCE_FILES += $(SDK_PATH)/components/libraries/scheduler/app_scheduler.c
 C_SOURCE_FILES += $(SDK_PATH)/components/ble/ble_radio_notification/ble_radio_notification.c
+ifeq ($(USE_DFU_SERVICE),true)
+C_SOURCE_FILES += $(SDK_PATH)/components/libraries/bootloader_dfu/experimental/dfu_app_handler.c
+C_SOURCE_FILES += $(SDK_PATH)/components/libraries/bootloader_dfu/bootloader_util_gcc.c
+C_SOURCE_FILES += $(SDK_PATH)/components/ble/ble_services/ble_dfu/ble_dfu.c
+endif
 #C_SOURCE_FILES += $(SDK_PATH)/components/ble/common/ble_conn_params.c#ble SDK_CONN_PARAMS_MODULE_ENABLE
 #C_SOURCE_FILES += $(SDK_PATH)/components/libraries/timer/app_timer.c#ble SDK_CONN_PARAMS_MODULE_ENABLE
 
@@ -364,12 +375,21 @@ erase:
 	$(NRFJPROG_PATH)/nrfjprog -e
 	
 jlink_connect:
-	/Applications/SEGGER/JLink/JLinkExe -device nrf51822 -if swd -speed 1000 >/dev/null 2>&1  & echo $$! >tmp.pid
-	
+	$(shell /Applications/SEGGER/JLink/JLinkExe -device nrf51822 -speed 4000 -if SWD -autoconnect 1 >/dev/null 2>&1 &)
+	sleep 1
+	/Applications/SEGGER/JLink/JLinkRTTClient &
+	echo "Done"
+	 
 jlink_kill:
-	kill $(shell cat tmp.pid)
-	$(shell rm tmp.pid)
+	kill -9 $(shell ps aux | grep 'JLinkExe' | awk '{print $2}')
+	kill -9 $(shell ps aux | grep 'JLinkRTTClient' | awk '{print $2}')
+	#kill $(shell cat tmp.pid)
+	#$(shell rm tmp.pid)
 
+jlink_show:
+	ps aux | grep JLinkExe
+	ps aux | grep JLinkRTTClient
+	
 reset:
 	$(NRFJPROG_PATH)/nrfjprog --reset
 

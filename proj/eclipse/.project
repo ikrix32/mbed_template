@@ -31,9 +31,9 @@
 			<location>/Volumes/DataHDD/work/microcontroller/mbed-api</location>
 		</link>
 		<link>
-			<name>nrf51sdk_7_2_0</name>
+			<name>nRF51_SDK_7_2_0</name>
 			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<location>/Volumes/DataHDD/work/tools/nRF51_SDK_7_2_0/components</location>
 		</link>
 		<link>
 			<name>src</name>
