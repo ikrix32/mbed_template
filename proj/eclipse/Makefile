@@ -11,7 +11,9 @@ USE_MBED_API=true
 USE_MBED_BLE=true
 USE_MBED_RTOS=false
 
-MBED_API_PATH=/Volumes/DataHDD/work/git/mbed-api
+NRFJPROG_PATH=/Volumes/DataHDD/work/tools/nRF5x-Command-Line-Tools_9_3_1_OSX/nrfjprog
+
+MBED_API_PATH=/Volumes/DataHDD/work/microcontroller/mbed-api
 SDK_PATH=/Volumes/DataHDD/work/tools/nRF51_SDK_7_2_0/
 
 OPTFLAGS= -g3 -O0
@@ -89,11 +91,12 @@ endif
 
 #RTOS
 ifeq ($(USE_MBED_RTOS),true)
-#INC_PATHS += -I"$(MBED_API_PATH)/rtos/rtos" -I"$(MBED_API_PATH)/rtos/rtx/TARGET_CORTEX_M"
-#C_SOURCE_FILES += $(call sourcefiles,$(MBED_API_PATH)/rtos/rtos/,*.c)
-#CPP_SOURCE_FILES += $(call sourcefiles,$(MBED_API_PATH)/rtos/rtos/,*.cpp)
+CFLAGS += -DTOOLCHAIN_GCC
 
-#C_SOURCE_FILES += $(call sourcefiles,$(MBED_API_PATH)/rtos/rtx/TARGET_CORTEX_M,*.c)
+INC_PATHS += -I"$(MBED_API_PATH)/rtos/rtos" -I"$(MBED_API_PATH)/rtos/rtx/TARGET_CORTEX_M"
+C_SOURCE_FILES += $(call sourcefiles,$(MBED_API_PATH)/rtos/rtos/,*.c)
+CPP_SOURCE_FILES += $(call sourcefiles,$(MBED_API_PATH)/rtos/rtos/,*.cpp)
+C_SOURCE_FILES += $(call sourcefiles,$(MBED_API_PATH)/rtos/rtx/TARGET_CORTEX_M,*.c)
 
 #ASM_SOURCE_FILES += $(MBED_API_PATH)/rtos/rtx/TARGET_CORTEX_M/TARGET_M0/TOOLCHAIN_GCC/HAL_CM0.s
 #ASM_SOURCE_FILES += $(MBED_API_PATH)/rtos/rtx/TARGET_CORTEX_M/TARGET_M0/TOOLCHAIN_GCC/SVC_Table.s

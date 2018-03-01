@@ -28,7 +28,7 @@
 		<link>
 			<name>mbed-api</name>
 			<type>2</type>
-			<location>/Volumes/DataHDD/work/git/mbed-api</location>
+			<location>/Volumes/DataHDD/work/microcontroller/mbed-api</location>
 		</link>
 		<link>
 			<name>nrf51sdk_7_2_0</name>
@@ -38,7 +38,7 @@
 		<link>
 			<name>src</name>
 			<type>2</type>
-			<location>/Volumes/DataHDD/work/git/mbed_template/src</location>
+			<location>/Volumes/DataHDD/work/microcontroller/mbed_template/src</location>
 		</link>
 		<link>
 			<name>nrf51sdk_7_2_0/ble</name>

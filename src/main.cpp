@@ -8,7 +8,7 @@ DigitalOut led1(p9);
 
 BLEDevice ble;
 
-UARTService *uart=NULL;
+UARTService *commService=NULL;
 //BatteryService *batteryService = NULL;
 DeviceInformationService *deviceInfo=NULL;
 
@@ -18,11 +18,11 @@ void ble_uart_print( const char * format, ... )
   va_list args;
   va_start (args, format);
   vsprintf (buffer,format, args);
-  if (uart) uart->write(buffer, strlen(buffer));
+  if (commService) commService->write(buffer, strlen(buffer));
   va_end (args);
 }
 
-const static char     DEVICE_NAME[]        = "K3DPrinter";
+const static char     DEVICE_NAME[]        = "mbed_template";
 //static const uint16_t uuid16_list[]        = {GattService::UUID_HEART_RATE_SERVICE,
 //                                              GattService::UUID_DEVICE_INFORMATION_SERVICE};
 
@@ -58,8 +58,11 @@ void onDataSent(unsigned length){
 
 void onDataWritten(const GattWriteCallbackParams *eventDataP) {
 	rtt_print("\nBLE data written ");
-	ble_uart_print("\n Tick");
+
+	rtt_print("\nSend replay ");
+	ble_uart_print("test \n");
 }
+
 void onDataRead(const GattReadCallbackParams *eventDataP) {
 	rtt_print("\nBLE data read");
 }
@@ -78,7 +81,6 @@ void periodicCallback(void)
 	//rtt_print("\nTick");
     if(bleConsoleIsConnected()){
     	led1 = !led1; // Do blinky on LED1 while we're waiting for BLE events
-        ble_uart_print("\n Tick");
     }
 }
 
@@ -110,7 +112,7 @@ void bleInitComplete(BLE::InitializationCompleteCallbackContext *params)
     deviceInfo = new DeviceInformationService(ble, "ARM", "Model1", "SN1", "hw-rev1", "fw-rev1", "soft-rev1");
 
 	// Setup primary service.
-    uart = new UARTService(ble);
+    commService = new UARTService(ble);
 
     //batteryService = new BatteryService(ble, 90);
 
